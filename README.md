@@ -1,0 +1,1 @@
+The oauth2-client server for the blog - https://neuw.medium.com/zitadel-spring-boot-oauth2-client-resource-da16fa736adb
