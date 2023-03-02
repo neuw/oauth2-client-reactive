@@ -17,16 +17,16 @@ public class PingController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private WebClient pingClientJwt;
+    private WebClient pingClientJwt; // this one is old style non-declarative
 
     @Autowired
-    private WebClient pingClientOpaque;
+    private WebClient pingClientOpaque; // this one is old style non-declarative
 
     @Autowired
-    private PingClientV1 pingClientV1;
+    private PingClientV1 pingClientV1; // this one is declarative
 
     @Autowired
-    private PingClientV1 pingClientV2;
+    private PingClientV1 pingClientV2; // this one is declarative
 
     @GetMapping("/check/v1/ping")
     public Mono<ObjectNode> getPingJwt() {
